@@ -1,24 +1,37 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 .wrapper {
-  border: 1px solid turquoise;
   max-width: 1400px;
   margin: auto;
 }
-.header {
-  background: orange;
+
+.header-container {
+  background: linear-gradient(to right, rgb(58, 58, 248),rgb(213, 213, 230));
+  border: 3px solid black;
+
 }
 .header-name {
   text-align: center;
   color: rgb(255, 247, 247);
-  border: 1px solid black;
-  box-shadow: 5px 0 5px rgba(0, 0, 0, .5);
 }
-.header-menu {
- border: 1px solid red;
+.header-name h1:hover {
+  padding: 5px;
+  background: linear-gradient(to right, rgb(166, 166, 224) , rgb(47, 47, 128) 150%);
+  border-radius: 50px 0 50px 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  width: 300px;
+  margin:  auto;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
+
 .header-menu ul {
   list-style: none;
   display: flex;
@@ -27,11 +40,16 @@ body {
 .header-menu ul a {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
 }
 .lista:hover {
-  border: 1px solid red;
-  background: aqua;
-  padding: 10px;
+  padding: 15px;
+  background: linear-gradient(to right, rgb(166, 166, 224) , rgb(47, 47, 128) 150%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  border-radius: 0 50px 0 50px;
 }
 .presentation-container {
   display: grid;
@@ -54,7 +72,6 @@ body {
   background: red;
 }
 .proyectos {
-  /* margin: 100px 0; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3 , 300px);
@@ -68,6 +85,7 @@ body {
 .project-marvel {
   grid-area: project-1;
   background: cornflowerblue;
+  border-radius: 0 50px 0 50px;
 }
 .project-instagram {
   grid-area: project-2;
@@ -76,6 +94,7 @@ body {
 .project-nike {
   grid-area: project-3;
   background: bisque;
+  border-radius: 50px 0 50px 0 ;
 }
 .project-amazon {
   grid-area: project-4;
@@ -88,6 +107,8 @@ body {
 .project-sector09{
   grid-area: project-6;
   background: green;
+
+  border-radius: 50px 0 50px 0 ;
 }
 .project-netflix{
   grid-area: project-7;
@@ -96,6 +117,7 @@ body {
 .project-freshPrince {
   grid-area: project-8;
   background: lightskyblue;
+   border-radius: 0 50px 0 50px;
 }
 .habilidad {
   display: grid;
@@ -114,9 +136,15 @@ body {
   box-shadow: -5px -5px 20px rgba(0, 0, 0, .5);
 }
 .footer-container {
-  background: silver;
-  height: 250px;
-  padding: 20px;
+  background: linear-gradient(to left ,blue , rgb(0, 174, 255)  );
+  height: 150px;
+  padding: 50px 0;
+}
+.footer-box {
+  border: 1px solid black;
+  width: 300px;
+  text-align: center;
+  margin: auto;
 }
 .footer-menu {
   display: flex;
@@ -129,4 +157,109 @@ body {
 }
 .menu h4 {
   margin: 0;
+}
+.eventos {
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+  gap: 50px;
+
+}
+.eventos-card::before {
+  content: '';
+  height: 8px;
+  display: block;
+  background-image: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.eventos-card{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.eventos-card-container {
+  width: 1400px;
+  display: flex;
+  gap: 30px;
+}
+.eventos-card.p-relative-start {
+  position: relative;
+  left: 100px;
+}
+.eventos-card.p-relative-center {
+  position: relative;
+  left: 400px;
+}
+.eventos-card.p-relative-end {
+  position: relative;
+  left: 700px;
+}
+.card-prueba-flex-position-container {
+  border: 1px solid red;
+  width: 900px;
+  margin: auto;
+}
+.card-prueba-flex-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card-prueba-flex-position-start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.card-prueba-flex-position-end {
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.hola {
+  text-align: center;
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: darkblue;
+}
+.hola p {
+  color: aqua;
+  border: 1px solid red;
+  width: 100px;
+}
+.card-boxshadow {
+  width: 1400px;
+  border: 1px solid red;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 400px;
+  width: 200px;
+  margin-right: 10px;
+  box-shadow: -5px -5px 5px 5px rgba(0, 0, 0, .3);
+  background: rgb(132, 184, 155)
+}
+.card.center{
+  position: relative;
+  top: 50px;
+  box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, .2);
+  background: seagreen;
+}
+.card.end {
+  position: relative;
+  top: 100px;
+  box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, .1);
+  background: rgb(29, 87, 54)
 }
