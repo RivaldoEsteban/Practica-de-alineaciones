@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  border: 1px solid turquoise;
+  max-width: 1400px;
+  margin: auto;
+}
+.header {
+  background: orange;
+}
+.header-name {
+  text-align: center;
+  color: rgb(255, 247, 247);
+  border: 1px solid black;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, .5);
+}
+.header-menu {
+ border: 1px solid red;
+}
+.header-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-menu ul a {
+  color: white;
+  text-decoration: none;
+}
+.lista:hover {
+  border: 1px solid red;
+  background: aqua;
+  padding: 10px;
+}
+.presentation-container {
+  display: grid;
+  grid-template-columns: repeat(3, 466px);
+  grid-template-rows: 500px;
+  grid-template-areas: "rojo blanco section-rojo-right"
+  "rojo blanco section-rojo-right";
+  border: 1px solid gray;
+}
+.section-red {
+  grid-area: rojo;
+  background: red;
+}
+.section-white {
+  grid-area: blanco;
+  background: white;
+}
+.section-rojo {
+  grid-area: section-rojo-right;
+  background: red;
+}
+.proyectos {
+  /* margin: 100px 0; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3 , 300px);
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-areas: "project-1 project-2 project-3"
+  "project-4 none project-5"
+  "project-6 project-7 project-8";
+
+}
+.project-marvel {
+  grid-area: project-1;
+  background: cornflowerblue;
+}
+.project-instagram {
+  grid-area: project-2;
+  background: aqua;
+}
+.project-nike {
+  grid-area: project-3;
+  background: bisque;
+}
+.project-amazon {
+  grid-area: project-4;
+  background: blue;
+}
+.project-stockx {
+  grid-area: project-5;
+  background: cadetblue;
+}
+.project-sector09{
+  grid-area: project-6;
+  background: green;
+}
+.project-netflix{
+  grid-area: project-7;
+  background: darkmagenta;
+}
+.project-freshPrince {
+  grid-area: project-8;
+  background: lightskyblue;
+}
+.habilidad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 600px;
+  grid-template-areas: "area1 none area3";
+}
+.habilidad-basicas {
+  grid-area: area1;
+  background: khaki;
+  box-shadow: 5px -5px 20px rgba(0, 0, 0, .5);
+}
+.habilidad-avanzadas {
+  grid-area: area3;
+  background: khaki;
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, .5);
+}
+.footer-container {
+  background: silver;
+  height: 250px;
+  padding: 20px;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+.contacto {
+  text-align: center;
+}
+.menu h4 {
+  margin: 0;
+}
