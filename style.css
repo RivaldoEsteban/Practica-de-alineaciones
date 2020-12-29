@@ -1,17 +1,14 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 .wrapper {
   max-width: 1400px;
   margin: auto;
 }
-
 .header-container {
   background: linear-gradient(to right, rgb(58, 58, 248),rgb(213, 213, 230));
   border: 3px solid black;
-
 }
 .header-name {
   text-align: center;
@@ -31,7 +28,6 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-
 .header-menu ul {
   list-style: none;
   display: flex;
@@ -42,7 +38,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 .lista:hover {
   padding: 15px;
@@ -62,6 +57,7 @@ body {
 .section-red {
   grid-area: rojo;
   background: red;
+  opacity: .5;
 }
 .section-white {
   grid-area: blanco;
@@ -70,6 +66,7 @@ body {
 .section-rojo {
   grid-area: section-rojo-right;
   background: red;
+  opacity: .5;
 }
 .proyectos {
   display: grid;
@@ -80,7 +77,6 @@ body {
   grid-template-areas: "project-1 project-2 project-3"
   "project-4 none project-5"
   "project-6 project-7 project-8";
-
 }
 .project-marvel {
   grid-area: project-1;
@@ -107,7 +103,6 @@ body {
 .project-sector09{
   grid-area: project-6;
   background: green;
-
   border-radius: 50px 0 50px 0 ;
 }
 .project-netflix{
@@ -117,7 +112,7 @@ body {
 .project-freshPrince {
   grid-area: project-8;
   background: lightskyblue;
-   border-radius: 0 50px 0 50px;
+  border-radius: 0 50px 0 50px;
 }
 .habilidad {
   display: grid;
@@ -141,7 +136,6 @@ body {
   padding: 50px 0;
 }
 .footer-box {
-  border: 1px solid black;
   width: 300px;
   text-align: center;
   margin: auto;
@@ -174,8 +168,6 @@ body {
 .eventos-card{
   width: 300px;
   height: 300px;
-  border: 1px solid black;
-
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -190,17 +182,19 @@ body {
 .eventos-card.p-relative-start {
   position: relative;
   left: 100px;
+  border: 1px solid red;
 }
 .eventos-card.p-relative-center {
   position: relative;
   left: 400px;
+  border: 1px solid red;
 }
 .eventos-card.p-relative-end {
   position: relative;
   left: 700px;
+  border: 1px solid red;
 }
 .card-prueba-flex-position-container {
-  border: 1px solid red;
   width: 900px;
   margin: auto;
 }
@@ -208,7 +202,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .card-prueba-flex-position-start{
   display: flex;
@@ -216,14 +209,12 @@ body {
   align-items: flex-start;
 }
 .card-prueba-flex-position-end {
-  border: 1px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 .hola {
   text-align: center;
-  border: 1px solid red;
   width: 300px;
   height: 300px;
   align-items: center;
@@ -233,12 +224,10 @@ body {
 }
 .hola p {
   color: aqua;
-  border: 1px solid red;
   width: 100px;
 }
 .card-boxshadow {
   width: 1400px;
-  border: 1px solid red;
   height: 700px;
   display: flex;
   align-items: center;
